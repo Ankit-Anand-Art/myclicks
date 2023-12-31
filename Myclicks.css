@@ -156,7 +156,7 @@ body{
         font-size: 45px;
     }
     .intro .top img,.intro .bottom img{
-        height: 50vh;
+        height: 30vh;
         box-shadow: 0 0 20px black;
         border-radius: 8vh;
         box-shadow: 5px 5px 0 rgb(0, 0, 0);
