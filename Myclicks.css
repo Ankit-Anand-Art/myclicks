@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: all 0.5s;
 }
 header{
     color: white;
@@ -33,7 +34,6 @@ body{
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-    /* border: 2px solid white; */
 
 }
 .items{
@@ -50,19 +50,24 @@ body{
     padding: 30px;
     color: white;
     font-weight: bold;
+    font-style: italic;
     text-shadow: 5px 5px 0 rgb(0, 0, 0);
+}
+.verma{
+    padding-left: 60px;
 }
 .intro .top img{
     height: 75vh;
     box-shadow: 0 0 20px black;
     border-radius: 8vh;
-    box-shadow: 5px 5px 0 rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 .intro .bottom img{
     height: 75vh;
     box-shadow: 0 0 20px black;
     border-radius: 8vh;
-    box-shadow: 0 0 10px rgb(156, 30, 30);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    transform:rotateY(180deg)
 }
 .bottom{
     min-height: 80vh;
@@ -70,7 +75,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid white; */
 }
 .text-box{
     width: 600px;
@@ -138,71 +142,122 @@ body{
     background-color: rgba(1, 75, 160, 0.295);
 }
 @media (orientation: portrait) or (max-width:540px){
+    *{transition: all 0.5s;}
+    header{
+        margin:5px;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        text-align: center;
+        border: 15px double white;
+    }
     h1{
-        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        font-size: 80px;
     }
     header h2{
-        font-size: 15px;
+        display: none;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
     }
+
+
+    
     .top{
-        height: fit-content;
-        padding-top: 20px;
+        height: 40vh;
+        padding: 0;
     }
     .items{
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0;
+        padding: 0;
     }
-    .name{
-        font-size: 45px;
+    .name>div{
+        font-size:80px;
+        
+    }
+    .verma{
+        padding-left: 60px;
+    }
+    .intro .top .img,.intro .bottom .img{
+        height:30vh;
+        width:30vh;
+        border-radius: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
     }
     .intro .top img,.intro .bottom img{
-        height: 30vh;
-        box-shadow: 0 0 20px black;
-        border-radius: 8vh;
-        box-shadow: 5px 5px 0 rgb(0, 0, 0);
-        margin:0 30px 20px 0;
+        box-shadow: none;
+        height: 100%;
+        width: 100%;
+        border-radius: 15vh;
+        flex:1;
     }
+
+    
     .bottom{
-        display: block;
+        height: fit-content;
+        margin: 20px;
+
+    }
+    .bottom .items{
+        display: flex;
     }
     .text-box{
-        width: 200px;
         text-align: left;
-        height: 50vh;
+        height: fit-content;
         margin-right: 20px;
+        padding: 20px;
+        flex:1;
     }
     .bottom .items .text span{
         display: block;
-        font-size: 40px;
+        font-size: 60px;
         font-weight: bold;
     }
     .bottom .items .text{
         color: rgb(255, 255, 255);
-        font-size: 20px;
+        font-size: 35px;
     }
     .bottom{
         padding-bottom: 0px;
         min-height:fit-content;
+    }
+
+
+
+
+    .head2{
+        height: fit-content;
+        font-size: 40px;
+        margin: 5px;
+        border: 5px solid white;
     }
     .images{
         display: flex;
         flex-direction:column;
         align-items: center;
     }
-    .img-box{
+    .images .img-box{
         width: 80vw;
+        border: 5px solid white;
     }
-    .images .img-box img{
-        width: 80vw;
-
+    .images .img-box>div>img{
+        width: 75vw;
+        margin-top:25px ;
     }
     .images .img-box .buttons{
+        width: 100%;
         margin-bottom: 4px;
+        
     }
     .images .img-box .buttons .like,.images .img-box .buttons .share{
-        font-size: 1.75em;
-        margin: 6px;
+        font-size:4vh;
+        margin: 2vh 2vw;
         border-radius: 10px;
-        padding: 10px 0;
+        height: 8vh;
     }
 }
