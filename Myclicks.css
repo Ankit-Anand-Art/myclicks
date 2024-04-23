@@ -67,7 +67,6 @@ body{
     box-shadow: 0 0 20px black;
     border-radius: 8vh;
     box-shadow: 0 0 20px rgb(0, 0, 0);
-    transform:rotateY(180deg)
 }
 .bottom{
     min-height: 80vh;
